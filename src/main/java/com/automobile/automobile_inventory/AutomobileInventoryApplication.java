@@ -8,6 +8,7 @@ public class AutomobileInventoryApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AutomobileInventoryApplication.class, args);
+        System.out.println("Server started...");
     }
 
 }

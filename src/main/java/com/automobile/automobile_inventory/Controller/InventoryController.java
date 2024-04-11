@@ -1,6 +1,5 @@
 package com.automobile.automobile_inventory.Controller;
 
-import com.automobile.automobile_inventory.Entity.Cars;
 import com.automobile.automobile_inventory.Entity.Inventory;
 import com.automobile.automobile_inventory.Repository.InventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
