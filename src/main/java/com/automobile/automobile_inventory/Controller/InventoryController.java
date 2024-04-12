@@ -22,17 +22,17 @@ public class InventoryController {
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<Inventory> getCar(@PathVariable int id) {
+    public ResponseEntity<Inventory> getInventory(@PathVariable int id) {
         return ResponseEntity.ok(inventoryRepository.findById(id).get());
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Inventory> insertTruck(@RequestBody Inventory inventory) {
+    public ResponseEntity<Inventory> insertInventory(@RequestBody Inventory inventory) {
         return ResponseEntity.ok(inventoryRepository.save(inventory));
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<Inventory> updateTruck(@PathVariable int id, @RequestBody Inventory inventory) {
+    public ResponseEntity<Inventory> updateInventory(@PathVariable int id, @RequestBody Inventory inventory) {
         Inventory i = inventoryRepository.findById(id).get();
 
         i.setCar_id(inventory.getCar_id());
@@ -42,7 +42,7 @@ public class InventoryController {
     }
 
     @DeleteMapping("/remove/{id}")
-    public ResponseEntity<String> removeCar(@PathVariable int id) {
+    public ResponseEntity<String> removeInventory(@PathVariable int id) {
         inventoryRepository.deleteById(id);
         return ResponseEntity.ok("Success");
     }

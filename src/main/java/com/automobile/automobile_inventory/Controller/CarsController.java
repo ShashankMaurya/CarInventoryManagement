@@ -27,12 +27,12 @@ public class CarsController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Cars> insertTruck(@RequestBody Cars car) {
+    public ResponseEntity<Cars> insertCar(@RequestBody Cars car) {
         return ResponseEntity.ok(carsRepository.save(car));
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<Cars> updateTruck(@PathVariable int id, @RequestBody Cars car) {
+    public ResponseEntity<Cars> updateCar(@PathVariable int id, @RequestBody Cars car) {
         Cars c = carsRepository.findById(id).get();
 
         c.setYear(car.getYear());
