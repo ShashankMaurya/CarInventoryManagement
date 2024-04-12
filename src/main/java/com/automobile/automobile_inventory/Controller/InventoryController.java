@@ -27,8 +27,9 @@ public class InventoryController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Inventory> insertInventory(@RequestBody Inventory inventory) {
-        return ResponseEntity.ok(inventoryRepository.save(inventory));
+    public ResponseEntity<Integer> insertInventory(@RequestBody Inventory inventory) {
+        inventoryRepository.save(inventory);
+        return ResponseEntity.ok(inventory.getId());
     }
 
     @PutMapping("/update/{id}")
@@ -42,8 +43,8 @@ public class InventoryController {
     }
 
     @DeleteMapping("/remove/{id}")
-    public ResponseEntity<String> removeInventory(@PathVariable int id) {
+    public ResponseEntity<Integer> removeInventory(@PathVariable int id) {
         inventoryRepository.deleteById(id);
-        return ResponseEntity.ok("Success");
+        return ResponseEntity.ok(200);
     }
 }

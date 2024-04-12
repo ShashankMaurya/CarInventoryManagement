@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380adb54-ad26-4edc-909c-fd3007b6d129" name="Changes" comment="initial commit">
+    <list default="true" id="380adb54-ad26-4edc-909c-fd3007b6d129" name="Changes" comment="QOL#2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automobile/automobile_inventory/Controller/CarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automobile/automobile_inventory/Controller/CarsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automobile/automobile_inventory/Controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automobile/automobile_inventory/Controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/automobile/automobile_inventory/Entity/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automobile/automobile_inventory/Entity/Inventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automobile/automobile_inventory/Controller/InventoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automobile/automobile_inventory/Controller/InventoryController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1712745300323" duration="306000" />
       <workItem from="1712746260162" duration="2090000" />
       <workItem from="1712812064004" duration="8313000" />
-      <workItem from="1712895651605" duration="4891000" />
+      <workItem from="1712895651605" duration="8225000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -105,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="QOL#2" />
+    <option name="LAST_COMMIT_MESSAGE" value="QOL#2" />
   </component>
 </project>
